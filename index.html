@@ -49,6 +49,7 @@ html{scroll-behavior:smooth}
 .tn{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
 .tn a{font:600 14px system-ui,sans-serif;color:var(--acc2);border:1px solid var(--line);border-radius:8px;padding:8px 14px;text-decoration:none;background:var(--card)}
 .tn a:hover{border-color:var(--acc)}
+.ym{overflow-x:auto;max-width:100%;border-radius:12px;min-height:200px}
 .cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
 .pc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
 .pc h3{margin:0 0 2px;font-size:19px}
@@ -65,7 +66,7 @@ footer{margin:40px 0;color:var(--mut);font:13px system-ui,sans-serif;border-top:
 <div class="k">Интерактивный путеводитель · Ярославская область</div>
 <h1>Вниз по Волге</h1>
 <p>Тематический маршрут из 10 остановок: от Углича по течению великой реки к Ярославлю, а затем вглубь земли — к Ростову и Переславлю. Всё это один край, где складывалась русская государственность, торговля и культура.</p>
-<nav class="tn"><a href="#route">Маршрут</a><a href="#people">Люди края</a><a href="#crafts">Промыслы</a></nav>
+<nav class="tn"><a href="#route">Маршрут</a><a href="#ymap">Яндекс-карта</a><a href="#people">Люди края</a><a href="#crafts">Промыслы</a></nav>
 </header>
 
 <div class="facts">
@@ -98,6 +99,10 @@ footer{margin:40px 0;color:var(--mut);font:13px system-ui,sans-serif;border-top:
 <div class="chips" id="chips"></div>
 </div>
 </div>
+
+<h2 id="ymap">Карта на Яндексе</h2>
+<p class="sub">Все 10 остановок на настоящей карте: масштабируйте, двигайте и нажимайте на метки.</p>
+<div class="ym"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad0edd5ca3cfff133d3cd8746151072cbeecea8b1dcfd143d9596d6973a84bd4d&amp;width=690&amp;height=554&amp;lang=ru_RU&amp;scroll=true"></script></div>
 
 <h2 id="people">Люди края</h2>
 <p class="sub">Те, чьи имена связаны с Ярославской землёй и известны всей России.</p>
